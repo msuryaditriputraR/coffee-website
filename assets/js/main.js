@@ -8,6 +8,13 @@ const scrollHeader = () => {
 window.addEventListener("scroll", scrollHeader);
 
 /*=============== SHOW SCROLL UP ===============*/
+const showScrollUp = () => {
+    document
+        .getElementById("scroll-up")
+        .classList[this.scrollY >= 350 ? "add" : "remove"]("show-scroll");
+};
+
+window.addEventListener("scroll", showScrollUp);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
