@@ -681,7 +681,41 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 300px) {
+  .container {
+    margin-inline: 1rem;
+  }
 
+  .nav__menu {
+    padding-inline: 2.5rem;
+  }
+
+  .home__title {
+    width: 220px;
+    text-align: center;
+  }
+
+  .home__title img {
+    bottom: 2.5rem;
+  }
+
+  .products__content {
+    grid-template-columns: 1fr;
+  }
+
+  .steps__content {
+    row-gap: 3rem;
+  }
+
+  .steps__card {
+    width: initial;
+  }
+
+  .steps__border {
+    left: 0;
+    top: 5.5rem;
+  }
+}
 
 /* For medium devices */
 
